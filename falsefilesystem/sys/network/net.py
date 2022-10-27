@@ -1,7 +1,7 @@
 import sys,random
 
 v = sys.argv
-with open("systems","r") as f:
+with open("systems.txt","r") as f:
     exec(f.read())
 
 if v[0] == "list":
