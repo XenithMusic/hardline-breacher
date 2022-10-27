@@ -21,8 +21,10 @@ class Terminal:
                 print(i.upper())
 
     def run(this,x):
-        x = "falsefilesystem" + x[1:]
-        os.system(" ".join(x))
+        x = "\"" + os.getcwd() + "/falsefilesystem" + this.activepath[1:] + x[0] + "\""
+        x = x.replace("/","\\")
+        print(x)
+        os.system(x)
 
     def echo(this,x):
         x = " ".join(x)
