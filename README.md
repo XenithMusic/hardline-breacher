@@ -9,7 +9,6 @@
 ### To-do
 
 - Built-ins
-- 
 
 ### Working on it
 
@@ -19,7 +18,6 @@
   - Hackability
     - Compromising module
 - Built-ins
-  - Run
 
 ### Complete
 
@@ -27,3 +25,4 @@
   - Man
   - Echo
   - Exit
+  - Run

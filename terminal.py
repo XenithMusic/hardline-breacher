@@ -2,6 +2,7 @@ import os
 
 class Terminal:
     def __init__(this,color):
+        this.accseed = 318144
         this.cmds = {"man":this.man,"help":this.man,"echo":this.echo,"exit":this.exit,"quit":this.exit,"run":this.run}
         this.color = color
         this.prompt = "$"
@@ -21,7 +22,7 @@ class Terminal:
                 print(i.upper())
 
     def run(this,x):
-        x = "\"" + os.getcwd() + "/falsefilesystem" + this.activepath[1:] + x[0] + "\""
+        x = "\"" + os.getcwd() + "/falsefilesystem" + this.activepath[1:] + x[0] + "\" " + str(this.accseed) + " " + " ".join(x[1:])
         x = x.replace("/","\\")
         print(x)
         os.system(x)
@@ -48,7 +49,9 @@ class Terminal:
             if x.startswith(i):
                 j(y[1:])
                 return
-        run(y[1:])
+        y = "run " + x
+        y = y.split(" ")
+        this.run(y[1:])
 
     def it(this,responselistener=None):
         a = input(this.prompt)

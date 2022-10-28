@@ -4,9 +4,14 @@ v = sys.argv
 with open("systems.txt","r") as f:
     systems = exec(f.read())
 
+print(v)
+v.pop(0)
+seed = int(v[0])
+v.pop(0)
+
 if v[0] == "list":
-    random.seed(v[1])
-    random.shuffle(systems)
+    random.seed(seed)
+        random.shuffle(systems)
     i = 0
     for i in systems:
         print(i.upper())
