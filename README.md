@@ -13,7 +13,6 @@
 ### Working on it
 
 - Network program
-  - Listing
   - Remote Access
   - Hackability
     - Compromising module
@@ -21,6 +20,8 @@
 
 ### Complete
 
+- Network program
+  - Listing
 - Built-ins
   - Man
   - Echo

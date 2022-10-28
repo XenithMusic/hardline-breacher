@@ -22,9 +22,8 @@ class Terminal:
                 print(i.upper())
 
     def run(this,x):
-        x = "\"" + os.getcwd() + "/falsefilesystem" + this.activepath[1:] + x[0] + "\" " + str(this.accseed) + " " + " ".join(x[1:])
+        x = "\"" + os.getcwd() + "/falsefilesystem" + this.activepath[1:] + x[0] + ".py\" " + str(this.accseed) + " " + " ".join(x[1:])
         x = x.replace("/","\\")
-        print(x)
         os.system(x)
 
     def echo(this,x):
